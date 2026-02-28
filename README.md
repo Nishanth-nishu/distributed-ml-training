@@ -146,23 +146,6 @@ distributed-ml-training/
 
 ---
 
-## 📄 Resume Bullet Points (copy-paste ready)
-
-```
-• Implemented distributed data-parallel (DDP) ML training framework using PyTorch
-  multiprocessing, scaling across N GPU/CPU workers with synchronized gradient
-  aggregation via AllReduce, achieving near-linear training speedup
-
-• Integrated end-to-end MLflow experiment tracking pipeline logging 15+ metrics
-  per epoch (AUC, F1, loss, LR), model artifacts, and hyperparameter configs,
-  enabling reproducible model comparison across 20+ experiments
-
-• Automated hyperparameter optimization using Ray Tune + Optuna Bayesian search
-  over lr, dropout, hidden dims, and batch size, reducing manual search time
-  by 10× while improving Val AUC by up to 8%
-```
-
----
 
 ## 🛠️ Tech Stack
 
