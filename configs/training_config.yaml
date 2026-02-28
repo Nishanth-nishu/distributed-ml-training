@@ -1,0 +1,22 @@
+# Default training config — can be overridden via CLI args or custom JSON
+
+dataset: "synthetic"          # synthetic | breast_cancer | covertype | synthetic_large
+n_samples: 100000             # for synthetic datasets
+
+# Model
+hidden_dims: [512, 256, 128]
+dropout: 0.3
+
+# Training
+epochs: 20
+batch_size: 512
+lr: 0.0003
+weight_decay: 0.0001
+patience: 5                   # early stopping patience
+
+# Distributed
+world_size: 2                 # number of DDP processes (auto-capped)
+backend: "gloo"               # gloo for CPU, nccl for GPU
+
+# HP Search
+hp_trials: 10
